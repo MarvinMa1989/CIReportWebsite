@@ -1,0 +1,54 @@
+package Control;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import Model.User;
+import Service.UserService;
+
+@Controller
+public class queryUser {
+
+	@Autowired
+	private UserService userService;
+	
+	@RequestMapping(value="/user/{userid}")
+	public String GetUser(@PathVariable("userid") long userID, ModelMap model)
+	{
+	      
+	       User u = new User();
+	       u.setId(userID);
+	       u.setUsername("zhaoyang");
+	       model.addAttribute("User", u);
+	      
+	       return "user";
+	}
+	
+	
+	@RequestMapping("/CreateUser")
+	public String home(){
+	    List<User> us = new ArrayList<User>();
+	    User u = new User();
+	    u.setUsername("zhangsan");
+	    us.add(u);
+	    u = new User();
+	    u.setUsername("wangwu");
+	    us.add(u);
+	    userService.saveUsers(us);
+	    return "success";
+	}
+	
+	@RequestMapping("/getUserList")
+	@ResponseBody
+	public List<User> json(){
+	    return userService.getAllUsers();
+	}
+}
+

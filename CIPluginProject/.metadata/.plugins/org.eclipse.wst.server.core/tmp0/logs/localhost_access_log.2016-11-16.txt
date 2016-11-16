@@ -1,0 +1,16 @@
+127.0.0.1 - - [16/Nov/2016:15:08:15 +0800] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:08:16 +0800] "GET /SpringMVCDemo/ HTTP/1.1" 200 276
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:31:04 +0800] "GET /SpringMVCDemo/ HTTP/1.1" 200 276
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:31:23 +0800] "GET /SpringMVCDemo/ HTTP/1.1" 200 276
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:31:23 +0800] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:31:27 +0800] "GET /SpringMVCDemo/text HTTP/1.1" 200 34
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:31:34 +0800] "GET /SpringMVCDemo/jsp HTTP/1.1" 200 307
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:32:01 +0800] "GET /SpringMVCDemo/html HTTP/1.1" 200 958
+127.0.0.1 - - [16/Nov/2016:15:43:41 +0800] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:43:42 +0800] "GET /SpringMVCResultful/ HTTP/1.1" 200 276
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:44:10 +0800] "GET /SpringMVCResultful/user/100 HTTP/1.1" 200 314
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:44:17 +0800] "GET /SpringMVCResultful/user/100.xml HTTP/1.1" 200 117
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:44:21 +0800] "GET /SpringMVCResultful/user/100.json HTTP/1.1" 200 69
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:44:31 +0800] "GET /SpringMVCResultful/user/100 HTTP/1.1" 200 314
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:44:41 +0800] "GET /SpringMVCResultful/user/100.xml HTTP/1.1" 200 117
+0:0:0:0:0:0:0:1 - - [16/Nov/2016:15:45:02 +0800] "GET /SpringMVCResultful/user/100.json HTTP/1.1" 200 69

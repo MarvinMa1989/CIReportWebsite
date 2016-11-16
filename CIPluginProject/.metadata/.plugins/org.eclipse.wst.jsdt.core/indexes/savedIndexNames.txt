@@ -1,0 +1,10 @@
+INDEX VERSION 1.3+C:\Work\CIPluginProject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+129057759.index
+1133882904.index
+918784396.index
+1612756931.index
+3790224790.index
+1041284200.index
+3453535742.index
+341501297.index
+3683930124.index
